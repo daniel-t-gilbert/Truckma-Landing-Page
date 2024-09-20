@@ -337,8 +337,8 @@
            document.getElementById("mySidepanel").style.width = "0";
          }
          // Set the date we're counting down to (6 months from now)
-         const countDownDate = new Date();
-         countDownDate.setMonth(countDownDate.getMonth() + 6);
+         // Convert the timestamp to a Date object
+         let countDownDate = new Date(1726745984 * 1000); // Multiply by 1000 to convert to milliseconds
          
          function updateCountdown() {
             const now = new Date().getTime();
